@@ -1,14 +1,14 @@
 {
-  "main.css": "/web/static/css/main.949a7bf1.chunk.css",
-  "main.js": "/web/static/js/main.12024f67.chunk.js",
-  "main.js.map": "/web/static/js/main.12024f67.chunk.js.map",
-  "runtime~main.js": "/web/static/js/runtime~main.c75ffd02.js",
-  "runtime~main.js.map": "/web/static/js/runtime~main.c75ffd02.js.map",
-  "static/js/2.6efc73d3.chunk.js": "/web/static/js/2.6efc73d3.chunk.js",
-  "static/js/2.6efc73d3.chunk.js.map": "/web/static/js/2.6efc73d3.chunk.js.map",
-  "index.html": "/web/index.html",
-  "precache-manifest.1a393c4fe0b40625157547853fc2a332.js": "/web/precache-manifest.1a393c4fe0b40625157547853fc2a332.js",
-  "service-worker.js": "/web/service-worker.js",
-  "static/css/main.949a7bf1.chunk.css.map": "/web/static/css/main.949a7bf1.chunk.css.map",
-  "static/media/logo.svg": "/web/static/media/logo.5d5d9eef.svg"
+  "main.css": "/owpao-io/static/css/main.949a7bf1.chunk.css",
+  "main.js": "/owpao-io/static/js/main.2dfb2c7b.chunk.js",
+  "main.js.map": "/owpao-io/static/js/main.2dfb2c7b.chunk.js.map",
+  "runtime~main.js": "/owpao-io/static/js/runtime~main.c06d492e.js",
+  "runtime~main.js.map": "/owpao-io/static/js/runtime~main.c06d492e.js.map",
+  "static/js/2.6efc73d3.chunk.js": "/owpao-io/static/js/2.6efc73d3.chunk.js",
+  "static/js/2.6efc73d3.chunk.js.map": "/owpao-io/static/js/2.6efc73d3.chunk.js.map",
+  "index.html": "/owpao-io/index.html",
+  "precache-manifest.c752b6598064e5eacedf6da3c65d0c13.js": "/owpao-io/precache-manifest.c752b6598064e5eacedf6da3c65d0c13.js",
+  "service-worker.js": "/owpao-io/service-worker.js",
+  "static/css/main.949a7bf1.chunk.css.map": "/owpao-io/static/css/main.949a7bf1.chunk.css.map",
+  "static/media/logo.svg": "/owpao-io/static/media/logo.5d5d9eef.svg"
 }
