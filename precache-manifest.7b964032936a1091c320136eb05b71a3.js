@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/owpao-io/static/js/runtime~main.c06d492e.js"
   },
   {
-    "revision": "c0032ea1737e88c11399",
-    "url": "/owpao-io/static/js/main.771a0deb.chunk.js"
+    "revision": "7131988da7fbd2cc073f",
+    "url": "/owpao-io/static/js/main.5d9d6122.chunk.js"
   },
   {
     "revision": "057c619797b3bcb4bb4b",
     "url": "/owpao-io/static/js/2.72ca1eee.chunk.js"
   },
   {
-    "revision": "c0032ea1737e88c11399",
+    "revision": "7131988da7fbd2cc073f",
     "url": "/owpao-io/static/css/main.cfb00e2c.chunk.css"
   },
   {
-    "revision": "364a4c5ef11ba2c69120bf6a2b9397a0",
+    "revision": "2e5b6a191e31d1693112a1fcb92879a4",
     "url": "/owpao-io/index.html"
   }
 ];
