@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import pic from '../assets/pao.jpg' 
-import { Paper, Grid } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 
 const styles = {
   paper: {
@@ -8,25 +8,27 @@ const styles = {
     height: 250,
     alignItems: 'center',
     justifyContent: 'center',
-    display: 'flex'
+    display: 'flex',
+    marginLeft:10,
+    marginRight:10
   }
 }
 
 class Profile extends Component {
   render() {
     return (
-      <Grid container spacing={16} justify='center'>
-        <Grid item>
+      <div style={{alignContent:'center', display:'flex',flexDirection:'row', width:'100%', height: '100%', justifyContent:'center', alignItems:'center'}}>
+        <div>
           <Paper style={styles.paper}>
             <img src={pic} alt='pic ko baket' height={150}/>
           </Paper>
-        </Grid>
-        <Grid item>
-          <Paper style = {styles.paper}>
+        </div>
+        <div>
+          <Paper style={styles.paper}>
             owpao
           </Paper>
-        </Grid>
-      </Grid>
+        </div>
+      </div>
     );
   }
 }
