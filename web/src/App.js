@@ -3,22 +3,21 @@ import React, { Component } from 'react';
 import './App.css';
 import './materialize/css/materialize.css'
 import Profile from './components/profile';
-import { AppBar, Grid } from '@material-ui/core';
+import NavigationBar from './components/appbar';
 // import { grey } from '@material-ui/core/colors';
+
 
 class App extends Component {
   render() {
     return (
-      <Grid container spacing={16} style={{height:'100%'}}>
-        < Grid item style={{display:'flex', alignContent:'center', justifyContent:'center'}}>
-            {/* <AppBar color="default" style={{alignItems:'center'}}>Test</AppBar>  */}
-          </Grid>
-          <Grid container spacing={16}>
-            <Grid item xs={12}>
-              < Profile/>
-            </Grid>
-          </Grid>
-      </Grid>
+      <div style={{width:'100%', height: '100%', display:'flex', justifyContent:'center'}}>
+        <div style={{flexDirection:'row'}}>
+          <NavigationBar/>
+        </div>
+        <div style={{flexDirection:'row'}}>
+          <Profile/>
+        </div>
+      </div>
     );
   }
 }
