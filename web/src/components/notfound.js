@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import pic from "../assets/error-404-page-not-found.jpg";
 
 class PageNotFound extends Component{
     render(){
         return (
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height:'100vh'}}>
-                <img src={pic}/>
+            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height:'100vh', fontSize:'3vw', color: '#bdbdbd'}}>
+                Page not found :(
             </div>
         )
     }
