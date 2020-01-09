@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import pic from "../assets/pao.jpg";
 import { Paper, Typography } from "@material-ui/core";
 import TextLoop from "react-text-loop";
 
@@ -29,7 +28,7 @@ class Profile extends Component {
       >
         <div>
           <Paper style={styles.paper}>
-            <img src={pic} alt="pic ko baket" height={150} />
+            <img src={'pao.jpg'} alt="my pic" height={150} />
           </Paper>
         </div>
         <div>

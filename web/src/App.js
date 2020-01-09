@@ -20,18 +20,6 @@ class App extends Component {
                     <div>
                         <Profile/>
                     </div>
-
-                    {/*<div className='footer'*/}
-                    {/*  style={{*/}
-                    {/*    display:'flex',*/}
-                    {/*    flexDirection:'column',*/}
-                    {/*    flex: 1,*/}
-                    {/*    justifyContent: 'space-between',*/}
-                    {/*    textAlign:'center',*/}
-                    {/*    marginBottom: 36*/}
-                    {/*  }}*/}
-                    {/*>*/}
-                    {/*</div>*/}
                 </div>
             </div>
         )
