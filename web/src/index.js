@@ -8,12 +8,10 @@ import * as serviceWorker from './serviceWorker';
 
 const routing = (
     <Router>
-      <div>
         <Switch>
-          <Route exact path="/owpao-io" component={App} />
+          <Route exact path="/" component={App} />
           <Route component={PageNotFound} />
         </Switch>
-      </div>
     </Router>
   )
 

@@ -23,8 +23,6 @@ class Profile extends Component {
           alignContent: "center",
           display: "flex",
           flexDirection: "row",
-          width: "100%",
-          height: "100%",
           justifyContent: "center",
           alignItems: "center"
         }}
@@ -38,8 +36,9 @@ class Profile extends Component {
           <Paper style={Object.assign("", styles.paper, { width: 500 })}>
               <Typography variant="h6" color="inherit" style={{textAlign:'center'}}>
                 <TextLoop noWrap={false}>
-                      <div style={{width:250}}>Hello World</div>
-                      <div style={{width:250}}>Paolo Flores</div>
+                      <div style={{width:500}}>Hello World</div>
+                      <div style={{width:500}}>I'm John Paolo Flores</div>
+                      <div style={{width:500}}>Web Developer at OOCL Philippines Inc.</div>
                   </TextLoop>
               </Typography>
           </Paper>
