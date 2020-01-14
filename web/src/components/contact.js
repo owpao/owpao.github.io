@@ -1,20 +1,18 @@
-import React, {Component} from "react";
+import React from "react"
 
-class ContactSection extends Component {
-    render() {
-        return (
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    color: '#FFFFFF',
-                    fontFamily: 'Roboto'
-                }}
-            >
-                Masarap ang luto ng mama mo.
-            </div>
-        );
-    }
+const ContactSection = () => {
+    return (
+        <div
+            style={{
+                display: "flex",
+                justifyContent: "center",
+                color: '#FFFFFF',
+                fontFamily: 'sans-serif'
+            }}
+        >
+            Masarap ang luto ng mama mo.
+        </div>
+    )
 }
 
-export default ContactSection;
+export default ContactSection

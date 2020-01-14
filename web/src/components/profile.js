@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import {Paper, Typography} from "@material-ui/core";
-import TextLoop from "react-text-loop";
+import React from "react"
+import {Paper, Typography} from "@material-ui/core"
+import TextLoop from "react-text-loop"
 
 const styles = {
     paper: {
@@ -11,36 +11,35 @@ const styles = {
         marginRight: 10,
         padding: 10
     }
-};
-
-class Profile extends Component {
-    render() {
-        return (
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center"
-                }}
-            >
-                <div>
-                    <Paper style={styles.paper}>
-                        <img src={'pao.jpg'} alt="my pic" height={300}/>
-                    </Paper>
-                </div>
-                <div style={{display:'flex'}}>
-                    <Paper style={Object.assign("", styles.paper, {width: 500})}>
-                        <Typography variant="h6" color="inherit" style={{textAlign: 'center'}}>
-                            <TextLoop noWrap={false}>
-                                <div style={{width: 500}}>Hello World</div>
-                                <div style={{width: 500}}>I'm John Paolo Flores</div>
-                                <div style={{width: 500}}>Web Developer at OOCL Philippines Inc.</div>
-                            </TextLoop>
-                        </Typography>
-                    </Paper>
-                </div>
-            </div>
-        );
-    }
 }
 
-export default Profile;
+
+const Profile = () => {
+    return (
+        <div
+            style={{
+                display: "flex",
+                justifyContent: "center"
+            }}
+        >
+            <div>
+                <Paper style={styles.paper}>
+                    <img src={'pao.jpg'} alt="my pic" height={300}/>
+                </Paper>
+            </div>
+            <div style={{display: 'flex'}}>
+                <Typography variant="h6" color="inherit" style={{
+                    textAlign: 'center', color: 'white', fontSize: '3vh', width: 600, alignSelf: 'center'
+                }}>
+                    <TextLoop noWrap={false}>
+                        <div style={{width: 600}}>Hello World</div>
+                        <div style={{width: 600}}>I'm John Paolo Flores</div>
+                        <div style={{width: 600}}>Web Developer at OOCL Philippines Inc.</div>
+                    </TextLoop>
+                </Typography>
+            </div>
+        </div>
+    )
+}
+
+export default Profile

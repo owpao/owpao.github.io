@@ -18,10 +18,22 @@ class App extends Component {
             >
                 <div style={{flexDirection: "row", width: "100%"}}>
                     <NavigationBar/>
+                    {/*<div className="parallax-container">*/}
+                    {/*    <div className="parallax"><img src="images/parallax1.jpg"></div>*/}
+                    {/*</div>*/}
                     <Profile/>
-                    <div style={{marginTop: 50}}>
-                        <ContactSection/>
-                    </div>
+                    {/*<div style={{*/}
+                    {/*    display: "flex",*/}
+                    {/*    justifyContent: "center",*/}
+                    {/*    color: '#FFFFFF',*/}
+                    {/*    fontFamily: 'sans-serif',*/}
+                    {/*    margin: '20px 0px'*/}
+                    {/*}}>*/}
+                    {/*    Skillz*/}
+                    {/*</div>*/}
+                    {/*<div style={{marginTop: 50}}>*/}
+                    {/*    <ContactSection/>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         )
