@@ -3,6 +3,7 @@ import "./App.css"
 import "./materialize/css/materialize.css"
 import Profile from "./components/profile"
 import NavigationBar from "./components/appbar"
+import ContactSection from "./components/contact";
 
 class App extends Component {
     render() {
@@ -17,8 +18,9 @@ class App extends Component {
             >
                 <div style={{flexDirection: "row", width: "100%"}}>
                     <NavigationBar/>
-                    <div>
-                        <Profile/>
+                    <Profile/>
+                    <div style={{marginTop: 50}}>
+                        <ContactSection/>
                     </div>
                 </div>
             </div>
