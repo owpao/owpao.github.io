@@ -24,7 +24,7 @@ const Profile = () => {
         >
             <div>
                 <Paper style={styles.paper}>
-                    <img src={'pao.jpg'} alt="my pic" height={300}/>
+                    <img src={'pao.jpg'} alt="my pic" height={500}/>
                 </Paper>
             </div>
             <div style={{display: 'flex'}}>

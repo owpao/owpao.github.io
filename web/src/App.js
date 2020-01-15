@@ -23,12 +23,11 @@ class App extends Component {
                     <NavigationBar/>
 
                     <Parallax
-                        // blur={1}
                         bgImage={'bnwbg1.jpg'}
                         bgImageAlt="the bg"
                         strength={300}
                     >
-                        <div style={{ height: 400, margin: '100px 0px'}}>
+                        <div style={{margin: '100px 0px'}}>
                             <Profile/>
                         </div>
                     </Parallax>
@@ -36,7 +35,7 @@ class App extends Component {
 
                     <div className="section white" style={{padding:'20px 0px'}}>
                         <div className="container">
-                            <h2 className="header">Skills</h2>
+                            <h1 className="header">Skills</h1>
                             <div>
                                 React.JS
                                 <LinearProgress variant="determinate" value={25}
@@ -55,7 +54,6 @@ class App extends Component {
                     </div>
 
                     <Parallax
-                        // blur={1}
                         bgImage={'bnwbg3.jpg'}
                         bgImageAlt="the bg"
                         strength={300}
@@ -64,17 +62,9 @@ class App extends Component {
                         </div>
                     </Parallax>
 
-                    {/*<div style={{*/}
-                    {/*    display: "flex",*/}
-                    {/*    justifyContent: "center",*/}
-                    {/*    color: '#FFFFFF',*/}
-                    {/*    fontFamily: 'sans-serif',*/}
-                    {/*    margin: '20px 0px'*/}
-                    {/*}}>*/}
-                    {/*</div>*/}
                     <div className="section white">
-                        <div className="container" style={{height: 700}}>
-                            <h2 className="header">Contact Me</h2>
+                        <div className="container" style={{height: 500}}>
+                            <h1 className="header">Contact Me</h1>
                             <ContactSection/>
                         </div>
                     </div>
