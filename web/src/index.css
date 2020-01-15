@@ -20,6 +20,10 @@ html, body, #root {
   background-color: #222222;
 }
 
+.section {
+  padding: 50px 0;
+}
+
 .white {
   background-color: white;
 }
@@ -31,3 +35,46 @@ html, body, #root {
   flex-direction: column;
   margin: auto;
 }
+
+.section {
+  padding: 50px 0;
+}
+
+.section .header {
+  margin-left: -10px;
+  width: 80%;
+}
+
+.contact-form div {
+  font-size: large;
+}
+
+.contact-form span {
+  color: red;
+}
+
+.contact-form input {
+  width: 350px;
+  height: 25px;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  font-size: medium;
+}
+
+.contact-form textarea {
+  width: 350px;
+  height: 50px;
+  font-size: medium;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+}
+
+.contact-form button {
+  box-shadow: 0 0 2px #888888;
+  width: 150px;
+  height: 50px;
+  font-size: large;
+  margin: 20px 0;
+  border: none;
+}
+
