@@ -29,12 +29,12 @@ const Profile = () => {
             </div>
             <div style={{display: 'flex'}}>
                 <Typography variant="h6" color="inherit" style={{
-                    textAlign: 'center', color: 'white', fontSize: '3vh', width: 600, alignSelf: 'center'
+                    textAlign: 'center', color: 'white', fontSize: '3vw', width: 600, alignSelf: 'center'
                 }}>
                     <TextLoop noWrap={false}>
                         <div style={{width: 600}}>Hello World</div>
-                        <div style={{width: 600}}>I'm John Paolo Flores</div>
-                        <div style={{width: 600}}>Web Developer at OOCL Philippines Inc.</div>
+                        <div style={{width: 800}}>I'm John Paolo Flores</div>
+                        <div style={{width: 900}}>Web Developer at OOCL Philippines Inc.</div>
                     </TextLoop>
                 </Typography>
             </div>
