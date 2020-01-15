@@ -10,7 +10,7 @@ const ContactSection = () => {
                 fontFamily: 'sans-serif'
             }}
         >
-            Masarap ang luto ng mama mo.
+            {/*Masarap ang luto ng mama mo.*/}
         </div>
     )
 }

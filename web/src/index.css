@@ -18,7 +18,16 @@ html, body, #root {
   height: 100%;
   width: 100%;
   background-color: #222222;
-  background-image: url("/bnwbg1.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+}
+
+.white {
+  background-color: white;
+}
+
+.container {
+  width: 75%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
