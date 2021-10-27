@@ -1,15 +1,11 @@
 import {AppBar, Button} from "@material-ui/core"
 import React from 'react'
 import {withRouter} from "react-router-dom"
-import {FaFacebookSquare, FaLinkedin} from "react-icons/fa"
+import {FaLinkedin} from "react-icons/fa"
 
 
 const onLinkedInClick = () => {
     window.open("https://www.linkedin.com/in/owpaoo/")
-}
-
-const onFacebookClick = () => {
-    window.open("https://www.facebook.com/owpaoo/")
 }
 
 const onHomeClick = (props) => {
@@ -39,9 +35,6 @@ const NavigationBar = (props) => {
                     <div style={{flex: 1}}/>
                     <Button style={{height: 50}} onClick={onLinkedInClick.bind(this)}>
                         <FaLinkedin size={30} style={{color:'white'}}/>
-                    </Button>
-                    <Button style={{height: 50}} onClick={onFacebookClick.bind(this)}>
-                        <FaFacebookSquare size={30} style={{color:'white'}}/>
                     </Button>
                 </div>
             </AppBar>
