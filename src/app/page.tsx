@@ -11,40 +11,10 @@ import { TechLogo } from "@/components/tech-logo"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
+import ContactForm from "@/components/ui/contact-form";
 
 export default function Home() {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-  const [isSending, setIsSending] = useState(false)
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSending(true)
-
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
-      })
-
-      if (response.ok) {
-        alert('Message sent successfully!')
-        setName("")
-        setEmail("")
-        setMessage("")
-      } else {
-        alert('Failed to send message. Please try again.')
-      }
-    } catch (error) {
-      alert('An error occurred. Please try again.')
-    } finally {
-      setIsSending(false)
-    }
-  }
+  
 
   return (
     <main className="min-h-screen relative">
@@ -107,9 +77,6 @@ export default function Home() {
                       >
                         linkedin.com/owpaoo
                       </a>
-                    </div>
-                    <div className="flex items-center space-x-2 text-sm">
-                      <span>(+63) 915 499 6738 | (+65) 9039 5746</span>
                     </div>
                   </div>
                 </CardContent>
@@ -545,52 +512,7 @@ export default function Home() {
                     <Mail className="h-6 w-6" />
                     Contact Me
                   </h2>
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <div className="space-y-2">
-                        <label htmlFor="name" className="text-sm font-medium">
-                          Name
-                        </label>
-                        <Input
-                          id="name"
-                          placeholder="Your name"
-                          value={name}
-                          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label htmlFor="email" className="text-sm font-medium">
-                          Email
-                        </label>
-                        <Input
-                          id="email"
-                          type="email"
-                          placeholder="Your email"
-                          value={email}
-                          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium">
-                        Message
-                      </label>
-                      <Textarea
-                        id="message"
-                        placeholder="Your message"
-                        value={message}
-                        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}
-                        required
-                        className="min-h-[100px]"
-                      />
-                    </div>
-                    <Button type="submit" className="w-full sm:w-auto" disabled={isSending}>
-                      <Send className="h-4 w-4 mr-2" />
-                      {isSending ? 'Sending...' : 'Send Message'}
-                    </Button>
-                  </form>
+                  <ContactForm />
                 </div>
               </CardContent>
             </Card>
