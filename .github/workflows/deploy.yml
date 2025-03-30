@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
     steps:
       - uses: actions/checkout@v2
       - name: Set up Node.js
@@ -16,12 +18,6 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
-            # Set the API_KEY as an environment variable for the build process
-      - name: Set API_KEY environment variable
-        run: |
-          touch .env.production
-          echo "RESEND_API_KEY=${{ secrets.RESEND_API_KEY }}" >> .env.production
-          cat .env.production
       - name: Build and export
         run: npm run build && npm run export
       - name: Deploy to GitHub Pages
