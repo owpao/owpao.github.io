@@ -8,8 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+    environment: production
     steps:
       - uses: actions/checkout@v2
       - name: Set up Node.js
