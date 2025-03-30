@@ -33,8 +33,6 @@ function validateEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   return emailRegex.test(email)
 }
-console.log('process.env.NEXT_PUBLIC_RESEND_API_KEY', process.env.NEXT_PUBLIC_RESEND_API_KEY)
-console.log('process.env.RESEND_API_KEY', process.env.RESEND_API_KEY)
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
 
