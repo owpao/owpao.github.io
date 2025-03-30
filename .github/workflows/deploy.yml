@@ -18,6 +18,8 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
+      - name: Debug environment variables
+        run: echo "RESEND_API_KEY=$RESEND_API_KEY"
       - name: Build and export
         run: npm run build && npm run export
       - name: Deploy to GitHub Pages
