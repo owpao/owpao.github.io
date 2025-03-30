@@ -18,7 +18,7 @@ jobs:
         run: npm install
             # Set the API_KEY as an environment variable for the build process
       - name: Set API_KEY environment variable
-        run: echo "RESEND_API_KEY=${{ secrets.RESEND_API_KEY }}" >> $GITHUB_ENV
+        run: echo "RESEND_API_KEY=${{ secrets.RESEND_API_KEY }}" >> .env.production
       - name: Build and export
         run: npm run build && npm run export
       - name: Deploy to GitHub Pages
