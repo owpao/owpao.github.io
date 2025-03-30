@@ -18,6 +18,9 @@ jobs:
         run: npm install
       - name: Build and export
         run: npm run build && npm run export
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
