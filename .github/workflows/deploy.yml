@@ -16,11 +16,11 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
+            # Set the API_KEY as an environment variable for the build process
+      - name: Set API_KEY environment variable
+        run: echo "RESEND_API_KEY=${{ secrets.RESEND_API_KEY }}" >> $GITHUB_ENV
       - name: Build and export
         run: npm run build && npm run export
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
